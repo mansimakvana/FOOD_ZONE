@@ -1,15 +1,16 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Poppins", "sans-serif"],
+        sans: ["Roboto", "Poppins", "sans-serif"],
       },
       colors: {
-        primary: "#ffc001",
-        secondary: "#ff9c01",
+        primary: "#1a759f",
+        secondary: "#184e77",
         dark: "#1e1e1e",
         light: "#f5f5f5",
       },

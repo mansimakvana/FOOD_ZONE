@@ -1,7 +1,6 @@
-import React from "react";
 import AppStoreImg from "../../assets/app_store.png";
 import PlayStoreImg from "../../assets/play_store.png";
-import Gif from "../../assets/mobile_bike.gif";
+import Gif from "../../assets/mobile-bike-unscreen.gif";
 
 const AppStore = () => {
   return (
@@ -14,8 +13,8 @@ const AppStore = () => {
               data-aos-duration="300"
               className="space-y-6 max-w-xl mx-auto"
             >
-              <h1 className="text-2xl text-center sm:text-left sm:text-4xl font-semibold text-gray-700 dark:text-gray-400">
-                Foodly is available for Android and IOS
+              <h1 className="text-2xl text-center sm:text-left sm:text-4xl font-semibold text-primary dark:text-gray-400">
+                Food-Zone now is available for Android and IOS
               </h1>
               <div className="flex flex-wrap justify-center sm:justify-start items-center">
                 <a href="#">

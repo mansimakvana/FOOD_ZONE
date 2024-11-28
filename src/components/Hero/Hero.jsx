@@ -1,26 +1,29 @@
 import React from "react";
-import BiryaniImg1 from "../../assets/biryani3.png";
-import BiryaniImg2 from "../../assets/biryani5.png";
-import BiryaniImg3 from "../../assets/biryani2.png";
+import { Typewriter } from "react-simple-typewriter";
+import thali from "../../assets/thali.png";
+import bhindi from "../../assets/bhindi.png";
+import momo from "../../assets/momo.png";
 import Vector from "../../assets/vector3.png";
+import { useState } from "react";
 
 const ImageList = [
   {
     id: 1,
-    img: BiryaniImg1,
+    img: thali,
   },
   {
     id: 2,
-    img: BiryaniImg2,
+    img: bhindi,
   },
   {
     id: 3,
-    img: BiryaniImg3,
+    img: momo,
   },
 ];
 
 const Hero = () => {
-  const [imageId, setImageId] = React.useState(BiryaniImg1);
+  const [imageId, setImageId] = React.useState(thali);
+  const [typingDone, setTypingDone] = useState(false);
 
   const bgImage = {
     backgroundImage: `url(${Vector})`,
@@ -46,17 +49,26 @@ const Hero = () => {
               data-aos-once="true"
               className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1"
             >
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">
-                Welcome{" "}
-                <span class="bg-clip-text text-transparent bg-gradient-to-b from-primary to-secondary">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#14213d] dark:text-gray-100">
+                {!typingDone && ( // Render Typewriter only while typing
+                  <Typewriter
+                    words={["Welcome to Foodie's Zone"]}
+                    loop={1} // Ensures typing happens only once
+                    cursor={true} // Display the cursor while typing
+                    cursorStyle="|"
+                    typeSpeed={70}
+                    deleteSpeed={70}
+                    onDone={() => setTypingDone(true)} // Triggered when typing is done
+                  />
+                )}
+                {/* <span className="bg-clip-text text-transparent bg-gradient-to-b from-primary to-secondary">
                   Foodie
                 </span>{" "}
-                Zone
+                Zone */}
               </h1>
-              <p className="text-sm ">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
-                reiciendis inventore iste ratione ex alias quis magni at optio
-              </p>
+              <i className="text-xl text-gray-700 dark:text-gray-500">
+              Here, every bite tells a story of care, compassion, and a deep connection to the planet, because good food is about more than just taste.<br/>Healthy for you, kind to the planet.
+              </i>
               <div>
                 <button className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full">
                   Order Now
@@ -78,6 +90,7 @@ const Hero = () => {
               <div className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute bottom-[0px] lg:-right-10 bg-white/30 rounded-full">
                 {ImageList.map((item) => (
                   <img
+                    key={item.id}
                     data-aos="zoom-in"
                     data-aos-duration="400"
                     data-aos-once="true"
@@ -85,10 +98,10 @@ const Hero = () => {
                     onClick={() => {
                       setImageId(
                         item.id === 1
-                          ? BiryaniImg1
+                          ? thali
                           : item.id === 2
-                          ? BiryaniImg2
-                          : BiryaniImg3
+                          ? bhindi
+                          : momo
                       );
                     }}
                     alt="biryani img"

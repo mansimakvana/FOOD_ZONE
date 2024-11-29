@@ -83,7 +83,7 @@ const Testimonial = () => {
                         alt=""
                       />
                       <p className="text-gray-500 text-sm line-clamp-3">{data.text}</p>
-                      <h1 className="text-xl font-bold">{data.name}</h1>
+                      <h1 className="text-sm font-bold">{data.name}</h1>
                       <p className="text-black/20 text-9xl font-serif absolute top-0 right-0">
                         ,,
                       </p>

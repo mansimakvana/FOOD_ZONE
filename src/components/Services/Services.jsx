@@ -1,5 +1,5 @@
-import Img from "../../assets/Bhindi.png";
-import Img2 from "../../assets/burger.png";
+import Img from "../../assets/dosa1.png";
+import Img2 from "../../assets/noodles.png";
 import Img3 from "../../assets/samosa.png";
 import Img4 from "../../assets/Paneer-Masala.png";
 import Img5 from "../../assets/pasta.png";
@@ -9,16 +9,16 @@ const ServicesData = [
   {
     id: 1,
     img: Img,
-    name: "Bhindi Masala",
+    name: "Masala Dosa",
     description:
-      "Bhindi Masala is a popular North Indian recipe, often served with roti, paratha, or rice. It’s a staple in Indian households.",
+      "Masala Dosa originated in Southern India, particularly in the state of Karnataka. It's a variation of the traditional dosa, stuffed with spiced potato filling.",
   },
   {
     id: 2,
     img: Img2,
-    name: "Burger",
+    name: "Noodles",
     description:
-      "Today, burgers are made with various types of meat and vegetarian/vegan options (like plant-based patties). Toppings can include anything from cheese and lettuce to fried eggs, avocado, or even pineapple.",
+      "Noodles are a staple in many cultures, including Chinese, Italian, Japanese, Thai, and more. Each region has its own unique take, like ramen in Japan, spaghetti in Italy, and pad thai in Thailand.",
   },
   {
     id: 3,

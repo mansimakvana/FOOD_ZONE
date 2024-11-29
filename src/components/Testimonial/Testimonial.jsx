@@ -9,31 +9,31 @@ const testimonialData = [
   {
     id: 1,
     name: "Mansi Makvana",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    text: "The food was amazing! Everything was fresh, and the flavors were perfect. I’ll definitely come back again.",
     img: img3,
   },
   {
     id: 2,
     name: "Dhaval Lalani",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    text: "Fast service and tasty meals. Highly recommend the spicy noodles—they're just the right amount of heat!",
     img: img2,
   },
   {
     id: 3,
     name: "Chirag Makvana",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    text: "Great atmosphere and super friendly staff. The pizza was so cheesy and delicious!",
     img: img1,
   },
   {
     id: 4,
     name: "Dhyana Patel",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    text: "Best burgers in town! The portions were generous, and the prices were reasonable.",
     img: img4,
   },
   {
     id: 5,
     name: "Sejal Mardia",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    text: "Loved the desserts here! The chocolate cake was soft, rich, and melted in my mouth.",
     img: img5,
   },
 ];
@@ -43,7 +43,7 @@ const Testimonial = () => {
     dots: true,
     arrows: false,
     infinite: true,
-    speed: 1500,
+    speed: 1000,
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
@@ -82,7 +82,7 @@ const Testimonial = () => {
                         src={data.img}
                         alt=""
                       />
-                      <p className="text-gray-500 text-sm">{data.text}</p>
+                      <p className="text-gray-500 text-sm line-clamp-4">{data.text}</p>
                       <h1 className="text-xl font-bold">{data.name}</h1>
                       <p className="text-black/20 text-9xl font-serif absolute top-0 right-0">
                         ,,

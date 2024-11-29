@@ -66,7 +66,7 @@ const Hero = () => {
                 </span>{" "}
                 Zone */}
               </h1>
-              <i className="text-xl text-gray-700 dark:text-gray-500">
+              <i className="text-xl text-gray-800 dark:text-gray-400">
               Here, every bite tells a story of care, compassion, and a deep connection to the planet, because good food is about more than just taste.<br/>Healthy for you, kind to the planet.
               </i>
               <div>
